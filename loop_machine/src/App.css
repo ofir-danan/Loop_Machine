@@ -1,0 +1,47 @@
+.App {
+  height: 90vh;
+}
+
+.looper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40vh;
+  height: 40vh;
+  margin: 0 auto;
+}
+
+.squareOff,
+.squareOn {
+  flex: 1 0 27%;
+  margin: 10px;
+}
+
+.squareOff:nth-child(3n + 2) {
+  background: #ba68c8;
+  box-shadow: 0 0 50px #ba68c8;
+}
+
+.squareOff:nth-child(3n + 1) {
+  background: #76ff03;
+  box-shadow: 0 0 50px #76ff03;
+}
+
+.squareOff:nth-child(3n + 0) {
+  background: #4fc3f7;
+  box-shadow: 0 0 50px #4fc3f7;
+}
+
+.squareOn:nth-child(3n + 2) {
+  background: #b136c7;
+  box-shadow: 0 0 50px #b136c7;
+}
+
+.squareOn:nth-child(3n + 1) {
+  background: #03ff25;
+  box-shadow: 0 0 50px #03ff25;
+}
+
+.squareOn:nth-child(3n + 0) {
+  background: #1eb1f5;
+  box-shadow: 0 0 50px #1eb1f5;
+}
