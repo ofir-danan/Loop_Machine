@@ -1,23 +1,23 @@
-import audio1 from "./120_future_funk_beats_25.mp3";
-import audio2 from "./120_stutter_breakbeats_16.mp3";
-import audio3 from "./Bass Warwick heavy funk groove on E 120 BPM.mp3";
-import audio4 from "./electric guitar coutry slide 120bpm - B.mp3";
-import audio5 from "./FUD_120_StompySlosh.mp3";
-import audio6 from "./GrooveB_120bpm_Tanggu.mp3";
-import audio7 from "./MazePolitics_120_Perc.mp3";
-import audio8 from "./PAS3GROOVE1.03B.mp3";
-import audio9 from "./SilentStar_120_Em_OrganSynth.mp3";
+import Future_Funk_Beats from "./120_future_funk_beats_25.mp3";
+import Stutter_Breakbeats from "./120_stutter_breakbeats_16.mp3";
+import Bass_Warwick from "./Bass Warwick heavy funk groove on E 120 BPM.mp3";
+import Electric_Guitar_Coutry from "./electric guitar coutry slide 120bpm - B.mp3";
+import StompySlosh from "./FUD_120_StompySlosh.mp3";
+import Groove from "./GrooveB_120bpm_Tanggu.mp3";
+import MazePolitics from "./MazePolitics_120_Perc.mp3";
+import PAS3GROOVE from "./PAS3GROOVE1.03B.mp3";
+import SilentStar from "./SilentStar_120_Em_OrganSynth.mp3";
 
 const audioArray = [
-  audio1,
-  audio2,
-  audio3,
-  audio4,
-  audio5,
-  audio6,
-  audio7,
-  audio8,
-  audio9,
+  { "Future Funk Beats": Future_Funk_Beats },
+  { "Stutter Break Beats": Stutter_Breakbeats },
+  { "Bass Warwick": Bass_Warwick },
+  { "Electric Guitar Country": Electric_Guitar_Coutry },
+  { "Stompy Slosh": StompySlosh },
+  { Groove: Groove },
+  { "Maze Politics": MazePolitics },
+  { "PAS3 Groove": PAS3GROOVE },
+  { "Silent Star": SilentStar },
 ];
 
 export default audioArray;

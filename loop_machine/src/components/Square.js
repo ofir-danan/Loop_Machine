@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { running, stop } from "../redux/playReducer";
 
-function Square({ audio, timer }) {
+function Square({ audio, timer, name }) {
   const [on, setOn] = useState(false);
   const [music] = useState(new Audio(audio));
 
@@ -20,7 +20,7 @@ function Square({ audio, timer }) {
 
   useEffect(() => {
     if (on && player) {
-      if (timer === 0 || timer % 8 === 0) {
+      if (timer === 0 || timer % 800 === 0) {
         music.play();
         music.loop = true;
       }
@@ -34,7 +34,9 @@ function Square({ audio, timer }) {
     <div
       className={on ? "squareOn" : "squareOff"}
       onClick={() => handleClick()}
-    ></div>
+    >
+      {!on && <span className="label">{name}</span>}
+    </div>
   );
 }
 

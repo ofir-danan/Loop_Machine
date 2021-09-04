@@ -1,5 +1,5 @@
 import React from "react";
-import { Play, Pause, Record2, PlayFill } from "@styled-icons/bootstrap";
+import { Play, Pause, PauseFill, PlayFill } from "@styled-icons/bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { pause, play, stop } from "../redux/playReducer";
 
@@ -20,12 +20,20 @@ function PlayBar({ setTimer }) {
   return (
     <div>
       {player ? (
-        <PlayFill size="45" />
+        <>
+          <PlayFill color="#76ff03" size="45" />
+          <Pause size="45" onClick={() => handlePause()} />
+        </>
       ) : (
-        <Play size="45" onClick={() => handlePlay()} />
+        <>
+          <Play size="45" onClick={() => handlePlay()} />
+          <PauseFill
+            size="45"
+            color="rgb(250, 46, 46)"
+            onClick={() => handlePause()}
+          />
+        </>
       )}
-      <Pause size="45" onClick={() => handlePause()} />
-      <Record2 size="45" />
     </div>
   );
 }

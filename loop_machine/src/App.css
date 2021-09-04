@@ -1,5 +1,18 @@
+body {
+  overflow-y: hidden;
+  font-family: "Nunito", sans-serif;
+  background: url("./images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .App {
-  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 85vh;
+  margin-bottom: 50px;
 }
 
 .looper {
@@ -7,7 +20,7 @@
   flex-wrap: wrap;
   width: 40vh;
   height: 40vh;
-  margin: 0 auto;
+  margin-bottom: 5%;
   background-color: rgb(65, 63, 63);
   padding: 100px;
   border-radius: 18px;
@@ -21,36 +34,48 @@
 
 .squareOff:nth-child(3n + 2) {
   background: #ba68c8;
-  box-shadow: #ba68c8 0px 2px 70px 1px;
   border-radius: 8px;
 }
 
 .squareOff:nth-child(3n + 1) {
   background: #76ff03;
-  box-shadow: #76ff03 0px 2px 70px 1px;
   border-radius: 8px;
 }
 
 .squareOff:nth-child(3n + 0) {
   background: #4fc3f7;
-  box-shadow: #4fc3f7 0px 2px 70px 1px;
   border-radius: 8px;
 }
 
 .squareOn:nth-child(3n + 2) {
   background: #b136c7;
-  box-shadow: #b136c7 0px 22px 70px 8px;
+  box-shadow: #ba68c8 0px 2px 70px 1px;
   border-radius: 8px;
 }
 
 .squareOn:nth-child(3n + 1) {
   background: #03ff25;
-  box-shadow: #03ff25 0px 22px 70px 8px;
+  box-shadow: #76ff03 0px 2px 70px 1px;
   border-radius: 8px;
 }
 
 .squareOn:nth-child(3n + 0) {
   background: #1eb1f5;
-  box-shadow: #1eb1f5 0px 22px 70px 8px;
+  box-shadow: #4fc3f7 0px 2px 70px 1px;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .looper {
+    width: 40vw;
+    height: 40vw;
+    padding: 10%;
+  }
+  .squareOff,
+  .squareOn {
+    margin: 4%;
+  }
+  .label {
+    display: none;
+  }
 }
