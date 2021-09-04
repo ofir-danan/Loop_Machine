@@ -8,40 +8,49 @@
   width: 40vh;
   height: 40vh;
   margin: 0 auto;
+  background-color: rgb(65, 63, 63);
+  padding: 100px;
+  border-radius: 18px;
 }
 
 .squareOff,
 .squareOn {
-  flex: 1 0 27%;
+  flex: 1 0 21%;
   margin: 10px;
 }
 
 .squareOff:nth-child(3n + 2) {
   background: #ba68c8;
-  box-shadow: 0 0 50px #ba68c8;
+  box-shadow: #ba68c8 0px 2px 70px 1px;
+  border-radius: 8px;
 }
 
 .squareOff:nth-child(3n + 1) {
   background: #76ff03;
-  box-shadow: 0 0 50px #76ff03;
+  box-shadow: #76ff03 0px 2px 70px 1px;
+  border-radius: 8px;
 }
 
 .squareOff:nth-child(3n + 0) {
   background: #4fc3f7;
-  box-shadow: 0 0 50px #4fc3f7;
+  box-shadow: #4fc3f7 0px 2px 70px 1px;
+  border-radius: 8px;
 }
 
 .squareOn:nth-child(3n + 2) {
   background: #b136c7;
-  box-shadow: 0 0 50px #b136c7;
+  box-shadow: #b136c7 0px 22px 70px 8px;
+  border-radius: 8px;
 }
 
 .squareOn:nth-child(3n + 1) {
   background: #03ff25;
-  box-shadow: 0 0 50px #03ff25;
+  box-shadow: #03ff25 0px 22px 70px 8px;
+  border-radius: 8px;
 }
 
 .squareOn:nth-child(3n + 0) {
   background: #1eb1f5;
-  box-shadow: 0 0 50px #1eb1f5;
+  box-shadow: #1eb1f5 0px 22px 70px 8px;
+  border-radius: 8px;
 }
