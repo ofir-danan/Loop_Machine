@@ -2,6 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   value: false,
+  isRunning: 0,
+  timer: 0,
 };
 
 export const playSlice = createSlice({
@@ -14,10 +16,16 @@ export const playSlice = createSlice({
     pause: (state) => {
       state.value = false;
     },
+    running: (state) => {
+      state.isRunning = state.isRunning + 1;
+    },
+    stop: (state) => {
+      state.isRunning = state.isRunning - 1;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { play, pause } = playSlice.actions;
+export const { play, pause, running, stop } = playSlice.actions;
 
 export default playSlice.reducer;
