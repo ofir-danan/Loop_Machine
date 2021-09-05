@@ -66,6 +66,14 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+  .body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .App {
+    height: 100vh;
+  }
   .looper {
     width: 40vw;
     height: 40vw;

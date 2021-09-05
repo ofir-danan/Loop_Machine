@@ -1,9 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: false,
-  isRunning: 0,
-  timer: 0,
+  value: false, // play / pause value
+  isRunning: 0, // amount of active loops
 };
 
 export const playSlice = createSlice({
