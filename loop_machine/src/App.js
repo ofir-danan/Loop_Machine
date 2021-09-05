@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src={logo} />
+      <img src={logo} alt="logo" />
       <div className="looper">
         {audio.map((item, key) => {
           const value = Object.values(item);
